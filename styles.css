@@ -288,11 +288,13 @@ h3 {
 }
 
 .person-card {
+  align-items: center;
   display: flex;
   flex-direction: column;
   gap: 22px;
   min-height: 300px;
   padding: 22px;
+  text-align: center;
 }
 
 .person-card p {
@@ -307,14 +309,15 @@ h3 {
 
 .avatar {
   align-items: center;
-  border-radius: 8px;
+  align-self: center;
+  border-radius: 50%;
   color: var(--surface);
   display: flex;
   font-size: 2rem;
   font-weight: 800;
   height: 136px;
   justify-content: center;
-  width: 100%;
+  width: 136px;
 }
 
 .avatar-teal {
@@ -503,7 +506,7 @@ h3 {
 
 .note-link:hover span,
 .note-link:focus-visible span {
-  color: var(--teal);
+  color: var(--forest);
 }
 
 .contact-section {
@@ -536,10 +539,10 @@ h3 {
 
 .organizer-list {
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  margin-top: 32px;
 }
 
 .organizer-list article {
+  align-items: center;
   background: var(--surface);
   border-color: var(--line);
   box-shadow: var(--shadow);
@@ -549,6 +552,7 @@ h3 {
   gap: 22px;
   min-height: 300px;
   padding: 22px;
+  text-align: center;
 }
 
 .organizer-list p {
