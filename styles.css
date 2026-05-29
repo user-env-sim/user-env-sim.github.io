@@ -85,7 +85,7 @@ a {
   align-items: center;
   display: flex;
   justify-content: center;
-  min-height: min(600px, 68vh);
+  min-height: min(520px, 60vh);
   overflow: hidden;
   padding: 80px clamp(20px, 5vw, 56px) 28px;
   position: relative;
@@ -220,20 +220,24 @@ h3 {
 }
 
 .intro-section {
-  padding-top: 40px;
+  padding-top: 28px;
 }
 
 .intro-copy {
   width: 100%;
 }
 
-.intro-copy > p:last-child {
+.intro-copy > p:not(.section-kicker) {
   color: var(--muted);
   font-size: 1.08rem;
-  margin: 0;
+  margin: 0 0 18px;
   max-width: none;
   text-align: justify;
   text-justify: inter-word;
+}
+
+.intro-copy > p:last-child {
+  margin-bottom: 0;
 }
 
 .section-heading {
@@ -577,7 +581,7 @@ h3 {
   }
 
   .hero {
-    min-height: 70vh;
+    min-height: 60vh;
     padding-top: 112px;
   }
 
