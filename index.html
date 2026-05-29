@@ -29,11 +29,11 @@
         <canvas class="hero-canvas" id="hero-canvas" aria-hidden="true"></canvas>
         <div class="hero-content">
           <h1 class="workshop-title" id="hero-title">Workshop on User and Environment Simulation</h1>
-          <p class="eyebrow hero-meta">Date and Venue TBA</p>
-          <p class="hero-copy">
+          <!-- <p class="eyebrow hero-meta">Date and Venue TBA</p> -->
+          <!-- <p class="hero-copy">
             A forum for research on simulated users, adaptive environments,
             evaluation sandboxes, and the systems that connect them.
-          </p>
+          </p> -->
           <div class="hero-actions" aria-label="Primary actions">
             <a class="button button-primary" href="#schedule">View schedule</a>
             <a class="button button-secondary" href="#speakers">Invited speakers</a>
@@ -41,18 +41,29 @@
         </div>
       </section>
 
-      <section class="section intro-section" id="about" aria-labelledby="about-title">
-        <div class="section-grid">
-          <div>
-            <p class="section-kicker">About The Workshop</p>
-            <h2 id="about-title">Modeling interaction before it reaches the real world.</h2>
-          </div>
+      <section class="section intro-section" id="about" aria-label="About The Workshop">
+        <div class="intro-copy">
+          <p class="section-kicker">About The Workshop</p>
           <p>
-            The workshop brings together researchers and practitioners building
-            simulations of users, tasks, environments, and interactive systems.
-            Topics include synthetic user behavior, environment generation,
-            agent evaluation, benchmark design, human-centered simulation, and
-            trustworthy deployment of simulated feedback loops.
+            A large number of applications like A/B testing, user research and usability studies, 
+            market research, and recommender systems require real human participants.
+            These studies are slow, costly, hard to reproduce, and often
+            infeasible when the target population is rare, specialized, or
+            difficult to reach. LLM-based digital users and
+            environment simulations offer a controlable, scalable and cost-effective 
+            way of studying human-system interaction: simulated users can navigate
+            interfaces, express preferences, follow goals, and interact with
+            websites, apps, tools, and recommender systems inside reproducible
+            sandboxes. However, LLMs are often designed to be helpful assistants,
+            not behave like heterogeneous humans. This leads to challenges in their adoption
+            for user simulations - LLMs can be sytlistically homogeneous, fail to capture the
+            user diversity, and introduce systematic biases. 
+            
+            For LLMs to reliable simulate users, several aspects such as User Modeling, Environment Simulations, 
+            Evaluation and Benchmarking, Applications, as well as the Societal Implications must be studied in tandem. 
+            The Workshop on Digital User and Environment Simulation aims to bring researchers and practitioners from 
+            Machine Learning, NLP, HCI, recommender systems, and behavioral science to foster interdesciplinary 
+            collaboration, research, and discussions.
           </p>
         </div>
       </section>
@@ -60,20 +71,32 @@
       <section class="section" aria-labelledby="topics-title">
         <div class="section-heading">
           <p class="section-kicker">Themes</p>
-          <h2 id="topics-title">Workshop Topics</h2>
+          <!-- <h2 id="topics-title">Workshop Topics</h2> -->
         </div>
         <div class="topic-grid">
           <article class="topic-card">
-            <h3>User Simulation</h3>
-            <p>Behavioral modeling, preference drift, multi-turn interaction, and persona-conditioned evaluation.</p>
+            <h3>Digital User Modeling</h3>
+            <p>How can we build LLM-based digital users that faithfully reflect human goals, preferences, constraints, uncertainty, frustration, and behavioral variation?</p>
           </article>
           <article class="topic-card">
             <h3>Environment Simulation</h3>
-            <p>World models, task environments, controllable perturbations, and synthetic testbeds.</p>
+            <p>How can we construct realistic yet controllable sandboxes for different interactive digital environments?</p>
           </article>
           <article class="topic-card">
-            <h3>Evaluation Systems</h3>
-            <p>Metrics, failure analysis, reproducibility, simulation fidelity, and deployment readiness.</p>
+            <h3>Evaluation and Benchmarking</h3>
+            <p>What metrics, datasets, benchmarks, and protocols are needed to measure simulator quality, such as realism, diversity, controllability, robustness, and fairness?</p>
+          </article>
+          <article class="topic-card">
+            <h3>Grounding in Real Human Behavior</h3>
+            <p>How can clickstreams, interaction logs, surveys, user studies, and other behavioral data be used to improve the fidelity and validity of user simulators?</p>
+          </article>
+          <article class="topic-card">
+            <h3>Responsible Simulation and Societal Implications</h3>
+            <p>What ethical, privacy, fairness, and governance challenges arise when digital users are used as proxies for real human populations?</p>
+          </article>
+          <article class="topic-card">
+            <h3>Applications and Deployment</h3>
+            <p>How can digital users and environment simulation support scalable, reproducible, and cost-effective studies of interactive systems across domains?</p>
           </article>
         </div>
       </section>

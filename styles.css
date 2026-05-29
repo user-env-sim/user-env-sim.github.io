@@ -82,18 +82,19 @@ a {
 }
 
 .hero {
-  align-items: flex-end;
+  align-items: center;
   display: flex;
-  min-height: min(520px, 64vh);
+  justify-content: center;
+  min-height: min(600px, 68vh);
   overflow: hidden;
-  padding: 96px clamp(20px, 5vw, 56px) 42px;
+  padding: 80px clamp(20px, 5vw, 56px) 28px;
   position: relative;
 }
 
 .hero::after {
   background:
-    linear-gradient(90deg, rgba(247, 243, 236, 0.94) 0%, rgba(247, 243, 236, 0.68) 52%, rgba(247, 243, 236, 0.2) 100%),
-    linear-gradient(0deg, rgba(247, 243, 236, 0.9), rgba(247, 243, 236, 0));
+    radial-gradient(circle at center, rgba(247, 243, 236, 0.9) 0%, rgba(247, 243, 236, 0.62) 44%, rgba(247, 243, 236, 0.24) 100%),
+    linear-gradient(0deg, rgba(247, 243, 236, 0.78), rgba(247, 243, 236, 0.12));
   content: "";
   inset: 0;
   pointer-events: none;
@@ -108,8 +109,9 @@ a {
 }
 
 .hero-content {
-  max-width: 980px;
+  max-width: 1120px;
   position: relative;
+  text-align: center;
   width: 100%;
   z-index: 1;
 }
@@ -141,14 +143,14 @@ h1 {
 }
 
 .workshop-title {
-  font-size: clamp(2.9rem, 5vw, 4.8rem);
+  font-size: clamp(2.0rem, 5vw, 3.8rem);
   line-height: 0.88;
-  margin-bottom: 18px;
-  max-width: 980px;
+  margin: 0 auto 22px;
+  max-width: 1060px;
 }
 
 .hero-meta {
-  margin-bottom: 18px;
+  margin-bottom: 24px;
 }
 
 h2 {
@@ -175,6 +177,11 @@ h3 {
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 32px;
+}
+
+.hero-actions {
+  justify-content: center;
+  margin-top: 0;
 }
 
 .button {
@@ -213,20 +220,20 @@ h3 {
 }
 
 .intro-section {
-  padding-top: 64px;
+  padding-top: 40px;
 }
 
-.section-grid {
-  align-items: start;
-  display: grid;
-  gap: clamp(28px, 6vw, 88px);
-  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+.intro-copy {
+  width: 100%;
 }
 
-.section-grid > p {
+.intro-copy > p:last-child {
   color: var(--muted);
   font-size: 1.08rem;
-  margin: 32px 0 0;
+  margin: 0;
+  max-width: none;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .section-heading {
@@ -570,11 +577,10 @@ h3 {
   }
 
   .hero {
-    min-height: 86vh;
+    min-height: 70vh;
     padding-top: 112px;
   }
 
-  .section-grid,
   .topic-grid,
   .person-grid,
   .project-grid,
@@ -614,8 +620,10 @@ h3 {
   }
 
   .hero {
+    min-height: 58vh;
     padding-left: 18px;
     padding-right: 18px;
+    padding-top: 88px;
   }
 
   .button {
