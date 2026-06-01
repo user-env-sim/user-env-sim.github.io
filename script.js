@@ -2,6 +2,19 @@ const canvas = document.querySelector("#hero-canvas");
 const header = document.querySelector(".site-header");
 const year = document.querySelector("#year");
 const ctx = canvas.getContext("2d");
+const css = getComputedStyle(document.documentElement);
+const colorToken = (name) => css.getPropertyValue(name).trim();
+const rgbaToken = (name, alpha) => {
+  const hex = colorToken(name).replace("#", "");
+  const value = hex.length === 3
+    ? hex.split("").map((channel) => channel + channel).join("")
+    : hex;
+  const red = parseInt(value.slice(0, 2), 16);
+  const green = parseInt(value.slice(2, 4), 16);
+  const blue = parseInt(value.slice(4, 6), 16);
+
+  return `rgba(${red}, ${green}, ${blue}, ${alpha})`;
+};
 
 let width = 0;
 let height = 0;
@@ -32,7 +45,7 @@ function resizeCanvas() {
 
 function draw() {
   ctx.clearRect(0, 0, width, height);
-  ctx.fillStyle = "#f7f3ec";
+  ctx.fillStyle = colorToken("--color-surface-soft");
   ctx.fillRect(0, 0, width, height);
 
   for (let i = 0; i < points.length; i += 1) {
@@ -58,7 +71,7 @@ function draw() {
       const distance = Math.hypot(point.x - next.x, point.y - next.y);
 
       if (distance < 150) {
-        ctx.strokeStyle = `rgba(31, 138, 138, ${0.22 - distance / 780})`;
+        ctx.strokeStyle = rgbaToken("--color-slate-teal", 0.22 - distance / 780);
         ctx.lineWidth = 1;
         ctx.beginPath();
         ctx.moveTo(point.x, point.y);
@@ -67,7 +80,11 @@ function draw() {
       }
     }
 
-    ctx.fillStyle = i % 3 === 0 ? "#d95d39" : i % 3 === 1 ? "#1f8a8a" : "#c28a20";
+    ctx.fillStyle = i % 3 === 0
+      ? colorToken("--color-warm-red")
+      : i % 3 === 1
+        ? colorToken("--color-slate-teal")
+        : colorToken("--color-soft-gold");
     ctx.beginPath();
     ctx.arc(point.x, point.y, point.radius, 0, Math.PI * 2);
     ctx.fill();

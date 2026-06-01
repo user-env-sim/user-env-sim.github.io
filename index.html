@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Workshop on Digital Users in Simulated Environments: a research workshop on modeling users, environments, and interactive systems."
+      content="Workshop on Digital Users in Simulated Environments: research on digital users, simulated environments, evaluation, grounding, and responsible deployment."
     />
     <title>Workshop on Digital Users in Simulated Environments</title>
     <link
@@ -34,10 +34,10 @@
             A forum for research on simulated users, adaptive environments,
             evaluation sandboxes, and the systems that connect them.
           </p> -->
-          <div class="hero-actions" aria-label="Primary actions">
+          <!-- <div class="hero-actions" aria-label="Primary actions">
             <a class="button button-primary" href="#schedule">View schedule</a>
             <a class="button button-secondary" href="#speakers">Invited speakers</a>
-          </div>
+          </div> -->
         </div>
       </section>
 
@@ -45,26 +45,27 @@
         <div class="intro-copy">
           <p class="section-kicker">About The Workshop</p>
           <p>
-            A large number of applications like A/B testing, user research and usability studies, 
-            market research, and recommender systems require real human participants.
-            These studies are slow, costly, hard to reproduce, and often
-            infeasible when the target population is rare, specialized, or
-            difficult to reach. LLM-based digital users and
-            environment simulations offer a controlable, scalable and cost-effective 
-            way of studying human-system interaction: simulated users can navigate
-            interfaces, express preferences, follow goals, and interact with
-            websites, apps, tools, and recommender systems inside reproducible
-            sandboxes. However, LLMs are often designed to be helpful assistants,
-            not behave like heterogeneous humans. This leads to challenges in their adoption
-            for user simulations - LLMs can be sytlistically homogeneous, fail to capture the
-            user diversity, and introduce systematic biases. 
+            Many applications depend on understanding human behavior, from A/B testing and
+            recommender systems to usability research and interactive LLM evaluation. Recruiting
+            participants is slow, costly, and hard to scale, while live experiments can disrupt
+            users or exclude rare populations. LLM-based digital users offer a scalable proxy:
+            they generate human-like responses, navigate interfaces, express preferences, and
+            pursue goals. Yet evaluating them in live websites, apps, and tools is difficult
+            because content, layouts, locations, and bot-detection policies change constantly.
+            Simulated environments provide stable testbeds, but they also have drawbacks: they
+            may lack real-world diversity, miss important interface dynamics, encode unrealistic
+            assumptions, and fail to generalize to real use.
           </p>
           <p>
-            For LLMs to reliable simulate users, several aspects such as User Modeling, Environment Simulations, 
-            Evaluation and Benchmarking, Applications, as well as the Societal Implications must be studied in tandem. 
-            The Workshop on Digital Users and Simulated Environments aims to bring researchers and practitioners from 
-            Machine Learning, NLP, HCI, recommender systems, and behavioral science to foster interdesciplinary 
-            collaboration, research, and discussions.
+            So far, research on digital users and research on simulated environments have largely
+            progressed as separate fields, leaving shared questions unresolved. We argue these are
+            interrelated challenges: realistic digital users need faithful environments, and useful
+            environments need realistic, diverse, fair behavior grounded in human data. This
+            workshop brings the two communities together to develop methods for user modeling,
+            benchmarks, behavioral calibration, environment construction, responsible simulation,
+            and deployment. The goal is to assess when simulation is valid, where it fails, and
+            how it can support scalable, reproducible research without treating synthetic proxies
+            as human replacements.
           </p>
         </div>
       </section>
@@ -108,34 +109,10 @@
         </div>
         <div class="person-grid">
           <article class="person-card">
-            <div class="avatar avatar-teal" aria-hidden="true">S1</div>
+            <img class="avatar avatar-photo" src="assets/zhou_yu.jpg" alt="Zhou Yu" />
             <div>
-              <h3>Speaker 1</h3>
-              <p>Affiliation TBA</p>
-              <span>Talk title TBA</span>
-            </div>
-          </article>
-          <article class="person-card">
-            <div class="avatar avatar-gold" aria-hidden="true">S2</div>
-            <div>
-              <h3>Speaker 2</h3>
-              <p>Affiliation TBA</p>
-              <span>Talk title TBA</span>
-            </div>
-          </article>
-          <article class="person-card">
-            <div class="avatar avatar-coral" aria-hidden="true">S3</div>
-            <div>
-              <h3>Speaker 3</h3>
-              <p>Affiliation TBA</p>
-              <span>Talk title TBA</span>
-            </div>
-          </article>
-          <article class="person-card">
-            <div class="avatar avatar-forest" aria-hidden="true">S4</div>
-            <div>
-              <h3>Speaker 4</h3>
-              <p>Affiliation TBA</p>
+              <h3><a href="https://www.cs.columbia.edu/~zhouyu/">Zhou Yu</a></h3>
+              <p>Columbia University</p>
               <span>Talk title TBA</span>
             </div>
           </article>
@@ -145,77 +122,13 @@
       <section class="section split-section" id="schedule" aria-labelledby="schedule-title">
         <div class="section-heading">
           <p class="section-kicker">Program</p>
-          <h2 id="schedule-title">Event Schedule</h2>
         </div>
         <div class="schedule-list">
           <article class="schedule-item">
-            <time>09:00 - 09:15</time>
+            <time>TBD</time>
             <div>
-              <h3>Opening Remarks</h3>
-              <p>Welcome, workshop goals, and overview of the day.</p>
-            </div>
-          </article>
-          <article class="schedule-item">
-            <time>09:15 - 10:00</time>
-            <div>
-              <h3>Invited Talk: Title TBA</h3>
-              <p>Speaker 1, Affiliation TBA</p>
-            </div>
-          </article>
-          <article class="schedule-item">
-            <time>10:00 - 10:30</time>
-            <div>
-              <h3>Contributed Talks Session A</h3>
-              <p>Short presentations on user modeling and interaction traces.</p>
-            </div>
-          </article>
-          <article class="schedule-item">
-            <time>10:30 - 11:00</time>
-            <div>
-              <h3>Coffee Break</h3>
-              <p>Informal discussion and poster setup.</p>
-            </div>
-          </article>
-          <article class="schedule-item">
-            <time>11:00 - 11:45</time>
-            <div>
-              <h3>Invited Talk: Title TBA</h3>
-              <p>Speaker 2, Affiliation TBA</p>
-            </div>
-          </article>
-          <article class="schedule-item">
-            <time>11:45 - 12:30</time>
-            <div>
-              <h3>Panel: What Makes a Simulation Useful?</h3>
-              <p>Moderated discussion with invited speakers and organizers.</p>
-            </div>
-          </article>
-          <article class="schedule-item">
-            <time>12:30 - 13:30</time>
-            <div>
-              <h3>Lunch Break</h3>
-              <p>Break and informal networking.</p>
-            </div>
-          </article>
-          <article class="schedule-item">
-            <time>13:30 - 14:15</time>
-            <div>
-              <h3>Poster Session</h3>
-              <p>Accepted papers, demos, and works in progress.</p>
-            </div>
-          </article>
-          <article class="schedule-item">
-            <time>14:15 - 15:00</time>
-            <div>
-              <h3>Invited Talk: Title TBA</h3>
-              <p>Speaker 3, Affiliation TBA</p>
-            </div>
-          </article>
-          <article class="schedule-item">
-            <time>15:00 - 15:15</time>
-            <div>
-              <h3>Closing Remarks</h3>
-              <p>Takeaways, next steps, and community discussion.</p>
+              <!-- <h3>TBD</h3> -->
+              <p>Program schedule to be announced.</p>
             </div>
           </article>
         </div>
@@ -225,33 +138,46 @@
         <div class="section-heading">
           <p class="section-kicker" id="organizers-title">Organizers</p>
         </div>
-        <div class="organizer-list">
-          <article>
-            <div class="avatar avatar-teal" aria-hidden="true">O1</div>
-            <h3>Organizer 1</h3>
-            <p>Affiliation TBA</p>
-            <span>Role TBA</span>
+        <div class="person-grid">
+          <article class="person-card">
+            <img class="avatar avatar-photo" src="assets/yunanlu.jpg" alt="Yunan Lu" />
+            <div>
+              <h3><a href="https://www.linkedin.com/in/luyunan/">Yunan Lu</a></h3>
+              <p>Columbia University</p>
+            </div>
           </article>
-          <article>
-            <div class="avatar avatar-gold" aria-hidden="true">O2</div>
-            <h3>Organizer 2</h3>
-            <p>Affiliation TBA</p>
-            <span>Role TBA</span>
+          <article class="person-card">
+            <img class="avatar avatar-photo" src="assets/chinmay_savadikar.png" alt="Chinmay Savadikar" />
+            <div>
+              <h3><a href="https://savadikarc.github.io/">Chinmay Savadikar</a></h3>
+              <p>NC State University</p>
+            </div>
           </article>
-          <article>
-            <div class="avatar avatar-coral" aria-hidden="true">O3</div>
-            <h3>Organizer 3</h3>
-            <p>Affiliation TBA</p>
-            <span>Role TBA</span>
+          <article class="person-card">
+            <img class="avatar avatar-photo" src="assets/lydia_chilton.jpg" alt="Lydia Chilton" />
+            <div>
+              <h3><a href="https://www.cs.columbia.edu/~chilton/chilton.html">Lydia Chilton</a></h3>
+              <p>Columbia University</p>
+            </div>
           </article>
-          <article>
-            <div class="avatar avatar-forest" aria-hidden="true">O4</div>
-            <h3>Organizer 4</h3>
-            <p>Affiliation TBA</p>
-            <span>Role TBA</span>
+          <article class="person-card">
+            <img class="avatar avatar-photo" src="assets/lingyun_wang.jpeg" alt="Lingyun Wang" />
+            <div>
+              <h3><a href="https://www.linkedin.com/in/wanglingyun/">Lingyun Wang</a></h3>
+              <p>Shopify</p>
+            </div>
+          </article>
+          <article class="person-card">
+            <img class="avatar avatar-photo" src="assets/lihong_li.jpg" alt="Lihong Li" />
+            <div>
+              <h3><a href="https://lihongli.github.io/">Lihong Li</a></h3>
+              <p>Meta</p>
+            </div>
           </article>
         </div>
       </section>
+
+      
     </main>
 
     <footer class="site-footer">
