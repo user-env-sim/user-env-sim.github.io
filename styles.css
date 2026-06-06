@@ -173,8 +173,8 @@ h1 {
 }
 
 .workshop-title {
-  font-size: clamp(2.0rem, 5vw, 3.8rem);
-  line-height: 0.88;
+  font-size: clamp(1.6rem, 4vw, 3.0rem);
+  line-height: 1.15;
   margin: 0 auto 22px;
   max-width: 1060px;
 }
