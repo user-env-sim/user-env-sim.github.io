@@ -321,7 +321,14 @@ h3 {
 }
 
 .person-grid {
+  display: flex;
+  flex-wrap: wrap;
   grid-template-columns: repeat(4, minmax(0, 1fr));
+  justify-content: center;
+}
+
+.person-grid .person-card {
+  flex: 0 1 calc((100% - 54px) / 4);
 }
 
 .person-card {
@@ -658,6 +665,10 @@ h3 {
 
   .person-card {
     min-height: 0;
+  }
+
+  .person-grid .person-card {
+    flex-basis: 100%;
   }
 
   .organizer-list li {
