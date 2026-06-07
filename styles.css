@@ -175,18 +175,8 @@ h1 {
 .workshop-title {
   font-size: clamp(1.6rem, 4vw, 3.0rem);
   line-height: 1.15;
-  margin: 0 auto 14px;
-  max-width: 1060px;
-}
-
-.hero-tagline {
-  color: var(--color-emphasis);
-  font-size: clamp(1rem, 2vw, 1.35rem);
-  font-weight: 800;
-  letter-spacing: 0.08em;
   margin: 0 auto 22px;
-  text-align: center;
-  text-transform: uppercase;
+  max-width: 1060px;
 }
 
 .hero-meta {
@@ -322,26 +312,6 @@ h3 {
 
 .person-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.centered-person-grid {
-  grid-template-columns: repeat(8, minmax(0, 1fr));
-}
-
-.centered-person-grid .person-card {
-  grid-column: span 2;
-}
-
-.centered-person-grid .person-card:nth-last-child(3):nth-child(4n + 1) {
-  grid-column: 2 / span 2;
-}
-
-.centered-person-grid .person-card:nth-last-child(2):nth-child(4n + 1) {
-  grid-column: 3 / span 2;
-}
-
-.centered-person-grid .person-card:last-child:nth-child(4n + 1) {
-  grid-column: 4 / span 2;
 }
 
 .person-card {
@@ -676,9 +646,7 @@ h3 {
     min-height: 180px;
   }
 
-  .person-card,
-  .centered-person-grid .person-card {
-    grid-column: auto;
+  .person-card {
     min-height: 0;
   }
 
