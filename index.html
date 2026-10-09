@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Workshop on Digital Users in Simulated Environments: research on digital users, simulated environments, evaluation, grounding, and responsible deployment."
+      content="Workshop on SimWorld: Human and Environment Simulation for Real Intelligence"
     />
-    <title>Workshop on Digital Users in Simulated Environments</title>
+    <title>Workshop on SimWorld</title>
     <link
       rel="icon"
       href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="%231f2933"/><text x="32" y="39" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700" fill="%23fffaf2">WS</text></svg>'
@@ -30,7 +30,7 @@
       <section class="hero" id="home" aria-labelledby="hero-title">
         <canvas class="hero-canvas" id="hero-canvas" aria-hidden="true"></canvas>
         <div class="hero-content">
-          <h1 class="workshop-title" id="hero-title">SimWorld: Human and Environments Simulation for Real Intelligence</h1>
+          <h1 class="workshop-title" id="hero-title">SimWorld: Human and Environment Simulation for Real Intelligence</h1>
           <p class="hero-tagline">Simulated Worlds, Real Intelligence</p>
           <!-- <p class="eyebrow hero-meta">Date and Venue TBA</p> -->
           <!-- <p class="hero-copy">
@@ -56,7 +56,7 @@
             </p>
           </div>
 
-          <a class="open-call-link" href="https://forms.gle/3vhXZaFK7doC8XHr8" target="_blank">
+          <a class="open-call-link" href="https://forms.gle/KdnMNmXecsKpae8z7" target="_blank">
             Sign Up to Review →
           </a>
         </div>
@@ -66,60 +66,68 @@
         <div class="intro-copy">
           <p class="section-kicker">About The Workshop</p>
           <p>
-            Many applications depend on understanding human behavior, from A/B testing and
-            recommender systems to usability research and interactive LLM evaluation. Recruiting
-            participants is slow, costly, and hard to scale, while live experiments can disrupt
-            users or exclude rare populations. LLM-based digital users offer a scalable proxy:
-            they generate human-like responses, navigate interfaces, express preferences, and
-            pursue goals. Yet evaluating them in live websites, apps, and tools is difficult
-            because content, layouts, locations, and bot-detection policies change constantly.
-            Simulated environments provide stable testbeds, but they also have drawbacks: they
-            may lack real-world diversity, miss important interface dynamics, encode unrealistic
-            assumptions, and fail to generalize to real use.
+            Many applications depend on understanding human behavior, from human–AI
+            collaboration and recommender systems to market research and usability testing.
+            Human interaction data supports both system evaluation and model training,
+            providing experience and feedback for reinforcement learning and recursive
+            self-improvement. Yet collecting this data is slow, costly, and difficult to
+            scale. LLM-based digital humans offer a scalable proxy: they can express
+            preferences, pursue goals, navigate interfaces, and interact with one another
+            to simulate collective behavior. Simulated environments, spanning websites,
+            mobile apps, tools, and robotics, provide stable and controllable settings for
+            these interactions. However, both face gaps in realism: digital humans may be
+            overly cooperative, lack behavioral diversity, or misrepresent populations,
+            while simulated environments may miss real-world complexity and fail to
+            support generalization.
           </p>
           <p>
-            So far, research on digital users and research on simulated environments have largely
-            progressed as separate fields, leaving shared questions unresolved. We argue these are
-            interrelated challenges: realistic digital users need faithful environments, and useful
-            environments need realistic, diverse, fair behavior grounded in human data. This
-            workshop brings the two communities together to develop methods for user modeling,
-            benchmarks, behavioral calibration, environment construction, responsible simulation,
-            and deployment. The goal is to assess when simulation is valid, where it fails, and
-            how it can support scalable, reproducible research without treating synthetic proxies
-            as human replacements.
+            SimWorld brings together researchers and practitioners to study human and environment 
+            simulation as interrelated challenges. Realistic interactions require both diverse human
+            behavior grounded in real data and faithful environment dynamics. The workshop
+            connects communities across machine learning, NLP, HCI, recommender systems,
+            multi-agent systems, robotics, and behavioral science to advance human behavior
+            modeling, environment construction, joint evaluation, behavioral alignment,
+            reinforcement learning, and agent self-improvement. Together, we aim to establish
+            when simulated interactions support valid downstream decisions, understand
+            where simulation fails, and develop responsible approaches to scalable,
+            reproducible training, evaluation, and product design without treating synthetic
+            proxies as replacements for human participants.
           </p>
         </div>
       </section>
 
       <section class="section" aria-labelledby="topics-title">
         <div class="section-heading">
-          <p class="section-kicker">Themes</p>
-          <!-- <h2 id="topics-title">Workshop Topics</h2> -->
+          <p class="section-kicker" id="topics-title">Themes</p>
         </div>
         <div class="topic-grid">
           <article class="topic-card">
-            <h3>Digital User Modeling</h3>
-            <p>How can we build LLM-based digital users that faithfully reflect human goals, preferences, constraints, uncertainty, frustration, and behavioral variation?</p>
-          </article>
-          <article class="topic-card">
-            <h3>Environment Simulation</h3>
-            <p>How can we construct realistic yet controllable sandboxes for different interactive digital environments?</p>
+            <h3>Human Behavior Modeling</h3>
+            <p>How can we build digital human foundation models that faithfully reflect human goals, preferences, constraints, uncertainty, frustration, and behavioral variation across domains? How can multi-agent simulation capture interactions and collective behavior?</p>
           </article>
           <article class="topic-card">
             <h3>Evaluation and Benchmarking</h3>
             <p>What metrics, datasets, benchmarks, and protocols are needed to measure simulator quality, such as realism, diversity, controllability, robustness, and fairness?</p>
           </article>
           <article class="topic-card">
-            <h3>Grounding in Real Human Behavior</h3>
+            <h3>Environment Simulation</h3>
+            <p>How can we construct realistic yet controllable sandboxes for digital and robotic environments?</p>
+          </article>
+          <article class="topic-card">
+            <h3>Reinforcement Learning and Agent Self-Improvement</h3>
+            <p>How can simulated humans and environments support reinforcement learning, adaptive curricula, and recursive self-improvement?</p>
+          </article>
+          <article class="topic-card">
+            <h3>Behavioral Alignment</h3>
             <p>How can clickstreams, interaction logs, surveys, user studies, and other behavioral data be used to improve the fidelity and validity of user simulators?</p>
           </article>
           <article class="topic-card">
             <h3>Responsible Simulation and Societal Implications</h3>
-            <p>What ethical, privacy, fairness, and governance challenges arise when digital users are used as proxies for real human populations?</p>
+            <p>What ethical, privacy, fairness, and governance challenges arise when simulated humans are used as proxies for real human populations?</p>
           </article>
           <article class="topic-card">
             <h3>Applications and Deployment</h3>
-            <p>How can digital users and environment simulation support scalable, reproducible, and cost-effective studies of interactive systems across domains?</p>
+            <p>How can human and environment simulation support scalable, reproducible, and cost-effective studies of interactive systems across domains?</p>
           </article>
         </div>
       </section>
@@ -130,26 +138,18 @@
         </div>
         <div class="person-grid">
           <article class="person-card">
+            <img class="avatar avatar-photo" src="assets/dilek_hakkani.jpeg" alt="Dilek Hakkani-Tur" />
+            <div>
+              <h3><a href="https://siebelschool.illinois.edu/about/people/all-faculty/dilek">Dilek Hakkani-Tur</a></h3>
+              <p>UIUC</p>
+              <span>Talk title TBA</span>
+            </div>
+          </article>
+          <article class="person-card">
             <img class="avatar avatar-photo" src="assets/dakuo_wang.jpg" alt="Dakuo Wang" />
             <div>
               <h3><a href="https://www.dakuowang.com/">Dakuo Wang</a></h3>
               <p>Northeastern University</p>
-              <span>Talk title TBA</span>
-            </div>
-          </article>
-          <article class="person-card">
-            <img class="avatar avatar-photo" src="assets/michel_galley.jpg" alt="Michel Galley" />
-            <div>
-              <h3><a href="https://www.microsoft.com/en-us/research/people/mgalley/">Michel Galley</a></h3>
-              <p>Microsoft Research</p>
-              <span>Talk title TBA</span>
-            </div>
-          </article>
-          <article class="person-card">
-            <img class="avatar avatar-photo" src="assets/yalidu.png" alt="Yali Du" />
-            <div>
-              <h3><a href="https://yalidu.github.io/">Yali Du</a></h3>
-              <p>King's College London</p>
               <span>Talk title TBA</span>
             </div>
           </article>
@@ -162,10 +162,10 @@
             </div>
           </article>
           <article class="person-card">
-            <img class="avatar avatar-photo" src="assets/dilek_hakkani.jpeg" alt="Dilek Hakkani-Tur" />
+            <img class="avatar avatar-photo" src="assets/michel_galley.jpg" alt="Michel Galley" />
             <div>
-              <h3><a href="https://siebelschool.illinois.edu/about/people/all-faculty/dilek">Dilek Hakkani-Tur</a></h3>
-              <p>UIUC</p>
+              <h3><a href="https://www.microsoft.com/en-us/research/people/mgalley/">Michel Galley</a></h3>
+              <p>Microsoft Research</p>
               <span>Talk title TBA</span>
             </div>
           </article>
